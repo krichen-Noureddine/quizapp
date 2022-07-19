@@ -1,11 +1,11 @@
 var express = require('express');
-var app = express();
+
 var bodyParser = require('body-parser');
 var mongoose=require ('mongoose');
 const quizrouter= require('./routers/routers');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+const app = express();
+app.use(express.json()); 
 
 
 

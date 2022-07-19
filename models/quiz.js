@@ -1,9 +1,9 @@
 var mongoose = require('mongoose')
 var Schema =mongoose.Schema;
 var questionSchema = mongoose.Schema({
-    quizid: Schema.Types.ObjectId,
+    //quizid: Schema.Types.ObjectId,
           
-    questionId: Schema.Types.ObjectId,
+    //questionId: Schema.Types.ObjectId,
    
     questionText:{
         type: String, 

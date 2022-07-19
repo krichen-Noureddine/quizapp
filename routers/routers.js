@@ -1,13 +1,14 @@
 const express= require ('express')
 const router =express.Router()
-const quizcontroller = require('../controller/quizcontroller')
+const quizController = require('../controller/quizController')
 
 
 
-router.post('/addquestion',quizcontroller.create)
-router.get('/question',quizcontroller.read)
-router.put('/updatequestion/:id',quizcontroller.updatequestion)
-router.delete('/deletequestion/:id',quizcontroller.deletequestion)
+router.post('/addquestion',quizController.create)
+router.get('/question',quizController.read)
+router.put('/updatequestion/:id',quizController.updatequestion)
+router.delete('/deletequestion/:id',quizController.deletequestion)
+
 
 
 
